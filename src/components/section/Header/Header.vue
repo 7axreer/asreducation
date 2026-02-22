@@ -13,9 +13,9 @@ const sendForm = () => {
   <header class="header">
     <div class="header__content">
       <div class="header__content-l">
-        <h1 class="header__content-h1">
+        <h2 class="header__content-h1">
           {{ s("eduName") }}
-        </h1>
+        </h2>
         <div class="header__content-texts">
           <p>
             Bizning maqsadimiz - sifatli va innovatsion ta'lim orqali har bir

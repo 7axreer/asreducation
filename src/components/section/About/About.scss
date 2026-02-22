@@ -5,38 +5,69 @@
     &-box {
       display: grid;
       grid-template-columns: repeat(12, 2fr);
-      gap: 10px;
+      gap: 8px;
       flex-wrap: wrap;
     }
     &-box > div {
-     padding: 10px 15px;
-     background: $whiteC;
-     border-radius: 10px;
+      padding: 10px 15px;
+      background: $whiteC;
+      border-radius: 10px;
     }
     &-l {
       grid-column: span 12;
       grid-row: span 2;
     }
-    &-grid > p, span {
-     font-size: 14px;
+    &-grid > p,
+    span {
+      font-size: 12px;
     }
     &-grid > h2 {
-     font-size: 22px;
+      font-size: 20px;
     }
     &-1 {
-     grid-column: span 4;
+      grid-column: span 4;
     }
     &-2 {
-     grid-column: span 4;
+      grid-column: span 4;
     }
     &-3 {
-     grid-column: span 4;
+      grid-column: span 4;
     }
     &-4 {
-     grid-column: span 6;
+      grid-column: span 6;
     }
     &-5 {
-     grid-column: span 6;
+      grid-column: span 6;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .about__content {
+    &-box {
+      display: grid;
+      grid-template-columns: repeat(12, 2fr);
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+    &-l {
+      grid-column: span 6;
+      grid-row: span 2;
+    }
+    &-1 {
+      grid-column: span 2;
+    }
+    &-2 {
+      grid-column: span 2;
+    }
+    &-3 {
+      grid-column: span 2;
+    }
+    &-4 {
+      grid-column: span 3;
+    }
+    &-5 {
+      grid-column: span 3;
     }
   }
 }

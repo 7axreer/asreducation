@@ -1,0 +1,44 @@
+@use "@/assets/styles/common" as *;
+
+.subject {
+  &__content {
+    &-box {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      gap: 8px;
+      width: 100%;
+    }
+    &-card {
+      background: $nextC;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      grid-column: span 2;
+      grid-row: span 2;
+      padding: 10px 15px;
+      border-radius: 10px;
+    }
+    &-card > p {
+      font-size: 14px;
+      font-weight: 500;
+    }
+    .card-1 {
+      grid-column: span 3;
+    }
+    .card-2 {
+      grid-column: span 3;
+    }
+    .card-3 {
+     grid-column: span 1;
+    }
+    .card-4 {
+     grid-column: span 4;
+    }
+    .card-5 {
+     grid-column: span 1;
+    }
+    .card-6 {
+      grid-column: span 6;
+    }
+  }
+}
