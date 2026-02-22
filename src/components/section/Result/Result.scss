@@ -1,0 +1,83 @@
+@use "@/assets/styles/common" as *;
+
+.result {
+  &__content {
+    margin-bottom: 15px;
+    .swiper {
+      width: 100%;
+      height: auto;
+    }
+    .swiper-wrapper {
+      width: 250px;
+    }
+    .swiper-slide {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 24px;
+      background: $whiteC;
+      padding: 20px;
+      border-radius: 24px;
+      border: 1px solid $nextC;
+    }
+    &-card {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    &-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    &-head > h5 {
+     font-size: 16px;
+    }
+    &-btn {
+      padding: 10px;
+      font-size: 14git px;
+      margin-top: 15px;
+      cursor: pointer;
+      background: $nextC;
+      border: none;
+      border-radius: 8px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 5px;
+    }
+    &-std {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border: 1px solid $nextC;
+      border-radius: 10px;
+      padding: 10px;
+      margin: 15px 0;
+    }
+    &-std > img {
+      width: 35px;
+      border-radius: 100%;
+    }
+    &-info {
+      font-size: 12px;
+      line-height: 1;
+    }
+    &-info > p {
+     font-size: 12px;
+    }
+    &-info > h6 {
+     font-size: 14px;
+    }
+    &-teach {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 10px;
+    }
+    &-teach > h5 {
+     font-size: 16px;
+
+}
+  }
+}
