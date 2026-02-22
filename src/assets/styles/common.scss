@@ -11,11 +11,13 @@ $whiteC: #ffffff;
   box-sizing: border-box;
   font-family: "Manrope", sans-serif;
   color: $textC;
+   -webkit-tap-highlight-color: transparent;
   
 }
 
 html, body {
   background: $mainC;
+  touch-action: manipulation;
 
 }
 
