@@ -1,0 +1,66 @@
+$mainC: #f2f2f2;
+$nextC: #ff7f3e;
+$textC: #373435;
+$whiteC: #ffffff;
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: "Manrope", sans-serif;
+  color: $textC;
+  
+}
+
+html, body {
+  background: $mainC;
+
+}
+
+button {
+  cursor: pointer;
+}
+
+.wrapper {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+  .wrapper {
+    max-width: 720px;
+
+  }
+}
+
+/* Laptop */
+@media (min-width: 1024px) {
+  .wrapper {
+    max-width: 960px;
+
+  }
+}
+
+/* Desktop */
+@media (min-width: 1280px) {
+  .wrapper {
+    max-width: 1190px;
+
+  }
+}
+
+button,
+select,
+input {
+  outline: none;
+  border: none;
+  background: none;
+}
+
+input[type="number"] {
+  appearance: textfield;
+}

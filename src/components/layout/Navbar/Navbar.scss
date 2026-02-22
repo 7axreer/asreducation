@@ -1,0 +1,90 @@
+.nav {
+  position: fixed;
+  top: 15px;
+  width: 100%;
+  z-index: 1000;
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 15px;
+    width: 100%;
+
+    background: rgba(255, 127, 62, 0.19);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8.6px);
+    -webkit-backdrop-filter: blur(8.6px);
+    border: 1px solid rgba(255, 127, 62, 0.14);
+    border-radius: 16px;
+
+    &-l {
+      width: 22px;
+    }
+
+    &-c {
+      position: fixed;
+      top: 64px;
+      left: -100%;
+      width: 250px;
+      height: 100vh;
+      background: white;
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      gap: 20px;
+      padding: 60px 20px;
+      transition: 0.3s ease;
+      z-index: 1001;
+    }
+    & .open {
+      top: 64px;
+      left: -20px;
+    }
+
+    &-r {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    /* Hamburger mobileda ko‘rinadi */
+    &-hamburger {
+      display: block;
+    }
+  }
+}
+
+.overlay {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background: #0000008a;
+  right: -10px;
+  top: 64px;
+  left: 0;
+  bottom: 0;
+  transition: 0.3s;
+}
+
+@media (min-width: 768px) {
+  .nav__content {
+    &-c {
+      position: static;
+      height: auto;
+      width: auto;
+      flex-direction: row;
+      background: transparent;
+      padding: 0;
+      gap: 25px;
+    }
+
+    &-hamburger {
+      display: none;
+    }
+  }
+
+  .overlay {
+    display: none;
+  }
+}

@@ -1,0 +1,154 @@
+@use "@/assets/styles/common" as *;
+
+.header {
+  margin-top: 80px;
+
+  &__content {
+    display: grid;
+    grid-template-columns: 1fr; // 📱 mobil default
+    gap: 15px;
+
+    &-l {
+      background: $nextC;
+      border-radius: 16px;
+      padding: 15px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    &-l > p {
+      text-align: right;
+      margin-top: 10px;
+      font-size: 18px;
+      font-weight: 500;
+    }
+    &-h1 {
+      font-size: 22px;
+    }
+
+    &-texts {
+      display: grid;
+      gap: 12px;
+    }
+    &-texts > p {
+      font-size: 14px;
+    }
+
+    &-r {
+      padding: 15px;
+      border: 1px solid $nextC;
+      border-radius: 16px;
+    }
+
+    &-r > h2 {
+      font-size: 22px;
+      padding-bottom: 8px;
+    }
+
+    &-r > p {
+      padding-bottom: 15px;
+      font-size: 14px;
+    }
+
+    &-form {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    &-form > span {
+      font-size: 11px;
+      padding: 0 5px;
+    }
+
+    &-name,
+    &-phone > input,
+    &-select > select {
+      width: 100%;
+      padding: 12px 14px;
+      border: 1px solid $nextC;
+      border-radius: 10px;
+      font-size: 14px;
+    }
+
+    &-phone {
+      position: relative;
+    }
+
+    &-phone > p {
+      position: absolute;
+      top: 50%;
+      left: 35px;
+      transform: translate(-50%, -50%);
+      font-size: 14px;
+    }
+
+    &-phone > input {
+      padding-left: 55px;
+    }
+
+    &-select {
+      position: relative;
+    }
+
+    &-select > select {
+      appearance: none;
+    }
+
+    &-select::after {
+      content: "▾";
+      position: absolute;
+      right: 15px;
+      top: 50%;
+      transform: translateY(-50%);
+      pointer-events: none;
+      font-size: 16px;
+    }
+
+    &-btn {
+      background: $nextC;
+      padding: 10px 0;
+      border-radius: 10px;
+      font-size: 15px;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .header__content {
+    grid-template-columns: 1fr 1fr;
+
+    &-r > h2 {
+      font-size: 26px;
+    }
+
+    &-r > p {
+      font-size: 15px;
+    }
+    &-l > p {
+      text-align: right;
+      margin-top: auto;
+      font-size: 18px;
+      font-weight: 500;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .header__content {
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+
+    &-l {
+      grid-column: span 3;
+    }
+
+    &-r {
+      grid-column: span 2;
+    }
+
+    &-r > h2 {
+      font-size: 32px;
+    }
+  }
+}

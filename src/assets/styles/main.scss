@@ -1,0 +1,5 @@
+@use "font.scss";
+@use "common.scss";
+
+@use "@/components/layout/Navbar/Navbar" as *;
+@use "@/components/section/Header/Header" as *;

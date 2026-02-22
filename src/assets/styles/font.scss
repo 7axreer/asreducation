@@ -1,0 +1,10 @@
+$Manrope: ("Regular", 400), ("Medium", 500), ("Bold", 700);
+
+@each $name, $weight in $Manrope {
+    @font-face {
+        font-display: swap;
+        font-family: "Manrope";
+        src: url(../fonts/Manrope/Manrope-#{$name}.woff2);
+        font-weight: $weight;
+    }
+}
