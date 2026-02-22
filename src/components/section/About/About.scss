@@ -1,0 +1,42 @@
+@use "@/assets/styles/common" as *;
+
+.about {
+  &__content {
+    &-box {
+      display: grid;
+      grid-template-columns: repeat(12, 2fr);
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+    &-box > div {
+     padding: 10px 15px;
+     background: $whiteC;
+     border-radius: 10px;
+    }
+    &-l {
+      grid-column: span 12;
+      grid-row: span 2;
+    }
+    &-grid > p, span {
+     font-size: 14px;
+    }
+    &-grid > h2 {
+     font-size: 22px;
+    }
+    &-1 {
+     grid-column: span 4;
+    }
+    &-2 {
+     grid-column: span 4;
+    }
+    &-3 {
+     grid-column: span 4;
+    }
+    &-4 {
+     grid-column: span 6;
+    }
+    &-5 {
+     grid-column: span 6;
+    }
+  }
+}

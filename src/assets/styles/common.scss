@@ -11,14 +11,13 @@ $whiteC: #ffffff;
   box-sizing: border-box;
   font-family: "Manrope", sans-serif;
   color: $textC;
-   -webkit-tap-highlight-color: transparent;
-  
+  -webkit-tap-highlight-color: transparent;
 }
 
-html, body {
+html,
+body {
   background: $mainC;
   touch-action: manipulation;
-
 }
 
 button {
@@ -30,12 +29,15 @@ button {
   margin: 0 auto;
   padding: 0 15px;
 }
+.main__title {
+  margin: 15px 0 5px 5px;
+  font-size: 24px;
+}
 
 /* Tablet */
 @media (min-width: 768px) {
   .wrapper {
     max-width: 720px;
-
   }
 }
 
@@ -43,7 +45,6 @@ button {
 @media (min-width: 1024px) {
   .wrapper {
     max-width: 960px;
-
   }
 }
 
@@ -51,7 +52,6 @@ button {
 @media (min-width: 1280px) {
   .wrapper {
     max-width: 1190px;
-
   }
 }
 
